@@ -10,17 +10,18 @@
 <body class="bg-gray-900 text-white">
 
     <header class="bg-gray-800 p-4">
-    <h1 class="text-4xl font-bold text-center">Certifications</h1>
-    <div class="overflow-x-auto">
-        <nav class="mt-4">
-            <ul class="flex flex-wrap justify-center space-x-6 px-4">
-                <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
-                <li><a href="experience.html" class="hover:text-blue-400">Experience</a></li>
-                <li><a href="certifications.html" class="hover:text-blue-400">Certifications</a></li>
-                <li><a href="hobbies.html" class="hover:text-blue-400">Hobbies</a></li>
-                <li><a href="projects.html" class="hover:text-blue-400">Projects</a></li>
-            </ul>
-        </nav>
+        <h1 class="text-4xl font-bold text-center">Certifications</h1>
+        <div class="overflow-x-auto">
+            <nav class="mt-4">
+                <ul class="flex flex-wrap justify-center space-x-6 px-4">
+                    <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
+                    <li><a href="experience.html" class="hover:text-blue-400">Experience</a></li>
+                    <li><a href="certifications.html" class="hover:text-blue-400">Certifications</a></li>
+                    <li><a href="hobbies.html" class="hover:text-blue-400">Hobbies</a></li>
+                    <li><a href="projects.html" class="hover:text-blue-400">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main class="max-w-4xl mx-auto mt-10 p-6 bg-gray-800 rounded-lg shadow-xl">
@@ -48,6 +49,19 @@
             </ul>
         </section>
     </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let currentPage = window.location.pathname.split("/").pop();
+            let links = document.querySelectorAll("nav a");
+
+            links.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("text-blue-400", "underline", "font-bold");
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
