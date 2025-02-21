@@ -4,37 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Jason Paragallo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
-    <header>
-        <h1>Projects</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="certifications.html">Certifications</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="projects.html">Projects</a></li>
+<body class="bg-gray-900 text-white font-sans">
+    <header class="bg-gray-800 p-4">
+        <h1 class="text-4xl font-bold text-center">Projects</h1>
+        <nav class="mt-4">
+            <ul class="flex justify-center space-x-6">
+                <li><a href="index.html" class="text-blue-400 hover:underline">Home</a></li>
+                <li><a href="experience.html" class="text-blue-400 hover:underline">Experience</a></li>
+                <li><a href="certifications.html" class="text-blue-400 hover:underline">Certifications</a></li>
+                <li><a href="hobbies.html" class="text-blue-400 hover:underline">Hobbies</a></li>
+                <li><a href="projects.html" class="text-blue-400 hover:underline">Projects</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="projects">
-        <h2>Amazon Fake Product Detection Model</h2>
-        <p>Description: This project aimed to detect fake products on Amazon by analyzing reviews.</p>
+    <section class="projects container mx-auto mt-10 px-6">
+        <h2 class="text-3xl font-semibold text-center mb-6">My Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Amazon Fake Product Model -->
+            <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold">Amazon Fake Product Model</h3>
+                <p class="text-gray-400 mt-2">A machine learning model to detect fake products on Amazon.</p>
+                <a href="assets/files/Amazon_Fake_Product_Model.ipynb" download 
+                   class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                   Download Notebook
+                </a>
+            </div>
 
-        <h2>Yelp Restaurant Clustering</h2>
-        <p>Description: This clustering model groups restaurants by cuisine style using Yelp data.</p>
+            <!-- Clustering Model -->
+            <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold">Clustering Model</h3>
+                <p class="text-gray-400 mt-2">Unsupervised learning model to group similar data points.</p>
+                <a href="assets/files/Clustering_Model.ipynb" download 
+                   class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                   Download Notebook
+                </a>
+            </div>
 
-        <h2>NHL Prediction Model</h2>
-        <p>Description: A machine learning model to predict the outcomes of NHL games using historical data.</p>
+            <!-- NHL Prediction Model -->
+            <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold">NHL Prediction Model</h3>
+                <p class="text-gray-400 mt-2">Predicts NHL game outcomes using machine learning.</p>
+                <a href="assets/files/NHL_Prediction_Model.ipynb" download 
+                   class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                   Download Notebook
+                </a>
+            </div>
 
-        <h2>Various Machine Learning Models to Predict Yelp Restaurant Ratings</h2>
-        <p>Description: A comparison of multiple machine learning models to predict Yelp ratings based on review data.</p>
+            <!-- Preprocessing & ML Models -->
+            <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold">Preprocessing & ML Models</h3>
+                <p class="text-gray-400 mt-2">Combines various ML models including Logistic Regression, SVM, and Random Forest.</p>
+                <a href="assets/files/Preprocessing+LogisticRegression,SupportVectorMachine,DecisionTree,RandomForest,AdaBoost,NeuralNetwork,NaiveBayes.ipynb" download 
+                   class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                   Download Notebook
+                </a>
+            </div>
 
-        <h2>Word2Vec Preprocessing</h2>
-        <p>Description: This project introduced text preprocessing techniques using Yelp reviews.</p>
+            <!-- Tableau Final Dashboard -->
+            <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold">Tableau Final Dashboard</h3>
+                <p class="text-gray-400 mt-2">An interactive Tableau dashboard showcasing key insights.</p>
+                <a href="assets/files/Tableau_Final.twbx" download 
+                   class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                   Download Tableau File
+                </a>
+            </div>
+
+            <!-- Word2Vec Model -->
+            <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold">Word2Vec Model</h3>
+                <p class="text-gray-400 mt-2">Natural language processing model using Word2Vec.</p>
+                <a href="assets/files/Word2Vec_Model.ipynb" download 
+                   class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                   Download Notebook
+                </a>
+            </div>
+        </div>
     </section>
 </body>
 </html>
